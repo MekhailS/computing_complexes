@@ -54,8 +54,6 @@ title('Tol($x, \mathbf{A}, \hat{b}$)','interpreter','latex')
 iveVal = ive(A, b1)
 rveVal = rve(A, b1)
 
-
-AETol = @(A, E, b, x) min(rad(b) - mag(mid(b) - A * x) + abs(E * x));
 E = 1 * [1 1;0 1;1 0];
 
 A1 = [infsup(0.249, 0.25), infsup(1.749, 1.750); 1, -infsup(3, 3); infsup(0, 0), 0];
